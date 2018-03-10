@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    // Kak Kak Kak
+     int n;
+     cin>>n;
+     while(n--)
+     {
+         string s;
+         cin>>s;
+         int o =0 , n=0 , e=0;
+         if(s.size()==3)
+         {
+             if(s[0]=='o')
+                o++;
+             if(s[1]=='n')
+                n++;
+             if(s[2]=='e')
+                e++;
+                if((o+n+e)>=2)
+                    cout<<'1'<<endl;
+                else
+                    cout<<'2'<<endl;
+         }
+         else
+            cout<<'3'<<endl;
+     }
+
+	return 0 ;
+}
