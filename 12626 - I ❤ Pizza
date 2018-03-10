@@ -1,0 +1,44 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    // Kak Kak Kak
+     int n ;
+     cin>>n;
+     while(n--)
+     {
+         string s;
+         int m=0 , r=0 , g=0 , a=0,i=0,t=0;
+         cin>>s;
+         for(int j=0 ; j<s.size() ; j++)
+         {
+             if(s[j]=='M')
+                m++;
+             if(s[j]=='A')
+                a++;
+             if(s[j]=='R')
+                r++;
+             if(s[j]=='G')
+                g++;
+             if(s[j]=='I')
+                i++;
+             if(s[j]=='T')
+                t++;
+         }
+         a=a/3;
+         r=r/2;
+         if(m>r)
+            m=r;
+         if(m>a)
+            m=a;
+         if(m>i)
+            m=i;
+         if(m>t)
+            m=t;
+         if(m>g)
+            m=g;
+         cout<<m<<endl;
+     }
+
+	return 0 ;
+}
